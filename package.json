@@ -1,0 +1,57 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@iconscout/react-unicons": "^1.1.6",
+    "@mui/material": "^5.6.0",
+    "@tanstack/react-query": "^4.29.11",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/react-query": "^1.2.9",
+    "apexcharts": "^3.35.0",
+    "autoprefixer": "^10.4.14",
+    "firebase": "^9.22.1",
+    "framer-motion": "^6.2.9",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.4.23",
+    "react": "^18.3.0-next-fecc288b7-20221025",
+    "react-apexcharts": "^1.4.0",
+    "react-circular-progressbar": "^2.0.4",
+    "react-dom": "^18.3.0-next-fecc288b7-20221025",
+    "react-icons": "^4.8.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "5.0.0",
+    "tailwindcss": "^3.3.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

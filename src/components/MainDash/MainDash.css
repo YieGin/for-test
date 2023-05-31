@@ -1,0 +1,33 @@
+.MainDash {
+    width: 100%;
+}
+
+.MainDash > :first-child {
+    align-self: flex-start;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 5rem;
+}
+
+.MainDash > :last-child {
+    width: 100%;
+    margin-top: 7rem;
+    margin-left: 10rem;
+    margin-right: 20rem;
+}
+
+@media (max-width: 600px) {
+    .MainDash {
+      width: 100%;
+      padding: 0 1.5rem; 
+      box-sizing: border-box;
+    }
+  
+    .MainDash > :first-child,
+    .MainDash > :last-child {
+      width: 100%; 
+      margin: 1.5rem 0;
+      box-sizing: border-box;
+    }
+
+  }

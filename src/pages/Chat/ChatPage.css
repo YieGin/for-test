@@ -1,0 +1,320 @@
+.ChatPage {
+width: 100%;
+padding-left: 4rem;
+display: flex;
+align-items: center;
+height: 100vh;
+justify-content: center;
+background: rgba(255, 255, 255, 0.436);
+}  
+
+.ChatContainer {
+width: 100%;
+height: 100%;
+display: flex;
+overflow: hidden;
+} 
+
+.SideChat {
+    flex: 1;
+    background-color: #1E1B1A;
+  }
+.MainChat{
+    flex: 2.5;
+    background-color: #1E1B1A;
+} 
+
+.NavChat{
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 5rem;
+    justify-content: space-between;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.35);
+    padding: 1rem;
+}
+
+.logoChat{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.userChat{
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5rem;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+img{
+background-color: white;
+height: 48px;
+width: 48px;
+border-radius: 50%;
+object-fit: cover;
+cursor: pointer;
+}
+
+
+
+.searchChat{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+    input{
+        background-color: transparent;
+        width: 100%;
+        height: 1.5rem;
+        color: white;
+        padding-left: 0px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+    }
+
+    .img-chat{
+        background-color: rgb(0, 0, 0);
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+        
+}
+
+.Chats {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 6rem;
+    justify-content: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+}
+.Chats:first-child {
+    box-shadow: 0 -1.25rem 1.25rem rgba(0, 0, 0, 0.35);
+}
+
+
+.ChatAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.userChatInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.userChatInfo span {
+    margin-bottom: -10px;
+}
+
+.Chats:hover{
+    background-color: #00000030;
+}
+.userChatInfo span {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.userChatInfo p {
+    color: darkgrey;
+    cursor: pointer;
+}
+
+.ChatScrollContainer {
+    overflow-y: auto;
+    height: calc(100% - 7rem); /* adjust this value as per your NavChat and Search components' total height */
+  }
+  
+  .ChatScrollContainer::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .ChatScrollContainer::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .ChatScrollContainer::-webkit-scrollbar-thumb {
+    background: pink;
+    border-radius: 3px;
+  }
+  
+  .ChatScrollContainer::-webkit-scrollbar-thumb:hover {
+    background: #ff8686;
+  }
+  
+  .ChatScrollContainer::-webkit-scrollbar,
+  .ChatScrollContainer::-webkit-scrollbar-thumb {
+    scrollbar-width: thin;
+    scrollbar-color: pink transparent;
+  }
+
+  .chatInfo{
+    height: 5rem;
+    background-color: #1E1B1A;
+    display: flex;
+    align-items: center;
+    color: #EED5D2;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.8);
+}
+
+.chatIcons > *:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+.chatIcons > * {
+ cursor: pointer;
+ color: #ffffff;
+  }
+
+.input{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.12);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 2rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+
+.messages{
+    color: #000000;
+    background-color: #1E1B1A;
+    height: calc(100% - 10rem);
+    overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+    width: 4px;
+    background-color: #1E1B1A;
+  }
+  
+  .messages::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .messages::-webkit-scrollbar-thumb {
+    background: pink;
+    border-radius: 3px;
+  }
+  
+  .messages::-webkit-scrollbar-thumb:hover {
+    background: #ff8686;
+  }
+
+
+
+
+.sendIcons {
+  display: flex;
+  color: #1E1B1A;
+}
+.micIcon, .plusIcon, .emojiIcon {
+    transform: scale(0.7);
+  }
+  .sendIcon {
+    margin-left: 1rem;
+    color: #EED5D2;
+  }
+
+  .micIcon:hover, .plusIcon:hover, .emojiIcon:hover  {
+    color: #7d7673; 
+  }
+
+  .sendIcon:hover {
+    color: #e4bbb7;
+  }
+
+  .input-label {
+    display: flex;
+    flex: 1;
+    }
+  .input-label input {
+    color: #000; 
+    }   
+
+  .input input {
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+    .message {
+        display: flex;
+        gap: 2rem;
+        padding-left: 1rem;
+    }
+      
+    .messageContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;  /* make sure it starts at the top */
+        background-color: #322d2c;
+        border-radius: 1rem;
+        max-width: 70%;
+        padding: 0.5rem;
+        color: #ffffff;
+        margin-top: 0.3rem;
+        padding-left: 1rem;
+    }
+      
+    .messageText {
+        flex: 1;
+        margin-right: 2rem;
+        word-break: break-word;
+    }
+      
+    .messageDetails {
+        display: flex;
+        align-items: center;
+        align-self: flex-end; /* aligns to the end (bottom) of cross axis */
+        gap: 2px;
+    }
+    
+    .messageContent:last-child {
+        border-bottom-left-radius: 0;
+      }
+
+      @media (max-width: 600px) {
+        .ChatContainer {
+            flex-direction: column;
+            padding-left: 0;
+            margin-left: 0;
+          }
+        
+          .SideChat {
+            flex: none;
+            height: auto;
+            overflow: initial;
+          }
+
+        .ChatPage {
+            padding-left: 0;
+          }
+          .ChatScrollContainer {
+            overflow-y: auto;
+            height: auto;
+          }
+          
+        .MainChat {
+          display: none;
+        }
+      }

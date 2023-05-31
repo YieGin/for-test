@@ -1,0 +1,15 @@
+.Cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .Cards {
+    grid-template-columns: 1fr 1fr; 
+  }
+  
+  .Cards .parentContainer:nth-child(3) {
+    grid-column: span 2; 
+  }
+}

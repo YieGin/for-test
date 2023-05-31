@@ -1,0 +1,35 @@
+.containerBox {
+    box-sizing: border-box; 
+    height: 30rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.workflow-title {
+    font-size: 26px;
+    background: radial-gradient(circle at center, black, rgb(70, 70, 70), rgb(5, 5, 5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .containerBox {
+        gap: 1rem;
+    }
+
+    .header {
+        gap: 2px;
+        margin-left: 1rem;
+    }
+    
+}

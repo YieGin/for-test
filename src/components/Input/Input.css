@@ -1,0 +1,27 @@
+.input {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:hover {
+    border-color: #fca5ad;
+  }
+  
+  .input:focus {
+    border-color: #fca5ad;
+  }
+  
+  .input::placeholder {
+    color: #999;
+  }
+
+  
+  
+  
+  
+  
+  

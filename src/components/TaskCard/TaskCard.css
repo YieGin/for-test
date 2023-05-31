@@ -1,0 +1,94 @@
+.taskCard {
+    height: 6rem;
+    width: 40rem;
+    background: linear-gradient(190deg, #eed5d2f5 0%, #dca8a3ea 100%);
+    border-radius: 0.7rem;
+    position: relative;
+    transition: all 0.5s ease;
+    padding: 10px 24px; 
+    box-sizing: border-box;
+    box-shadow: 2px 4px 6px 0 hsla(0, 0%, 0%, 0.06), 0 2px 4px 0 hsla(0, 0%, 0%, 0.06);
+  }
+  
+
+  .taskCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .taskCard:hover::before {
+    opacity: 0.3;
+  }
+
+  .taskCard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .taskCard-title {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  .taskCard-status {
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .taskCard-progress {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.721);
+    border-radius: 1rem;
+    margin: 0 auto; 
+    position: relative; 
+  }
+  
+  .taskCard-progress-bar {
+    position: absolute;
+    height: 100%;
+    background: rgb(251, 157, 157);
+    border-radius: 1rem;
+  }
+  
+  .taskCard-progress-separators {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .progressBar-separator {
+    position: absolute;
+    height: 100%;
+    width: 2.5px;
+  }
+
+  .taskCard-duration {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .taskCard-titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .taskCard{
+        width: 100%;
+    } 
+  }

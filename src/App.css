@@ -1,0 +1,58 @@
+:root {
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --black: #000000;
+  --gray: #788097;
+  --pink: #FF919D;
+  --glass: linear-gradient(120deg, #ffffff 0%, #fffffff8 100%);
+  --activeItem: #e9c1bca2;
+  --boxmonth: linear-gradient(120deg, #eed5d2ca 0%, #f9f0efdb 190%);
+  --boxelse: linear-gradient(220deg, #f5f5f5 10%, #ffffff 120%);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.App {
+  /* padding: 0.5rem 3.5rem; */
+  color: var(--black);
+  background: linear-gradient(
+    106.37deg,
+    #333333 29.63%,
+    #151515 51.55%,
+    #000000 90.85%
+  );
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.AppGlass {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: var(--glass);
+  gap: 16px;
+  grid-template-columns: auto 20rem;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 600px) {
+  .AppGlass{
+    grid-template-columns: 100%;
+  } 
+}
+
+.AppGlassChat {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background: var(--glass);
+  gap: 16px;
+  overflow: hidden;
+}
+
+
+

@@ -1,0 +1,30 @@
+.hover-container {
+    position: relative;
+  }
+  
+.overlay {
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    border-radius: 0.7rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out;
+  }
+
+.HoverOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.HoverOverlay.isHovered {
+    opacity: 1;
+}
